@@ -1,4 +1,5 @@
 **Netflix microservices.**
+
 Netflix transitioned from a monolithic architecture, a single Java application running on Oracle databases, to microservices architecture after a major database corruption that brought their system down for about three days in 2008. Netflix migrated from their own data centres to Amazon Web Services (AWB) allowing it to use the scalability and reliability of AWS such that when demand grows rapidly, it lets Netflix scale up quickly without worrying about running out of resources. 
 Examples of microservices that Netflix uses include playback service, recommendation service, edge service or Zuul as the API (Application Programming Interface) gateway, Eureka for service discovery, user authentication, and billing and subscription service. With these microservices, separation of concerns is applied with each service having one job and its own dedicated data store preventing a ripple effect where a bug in one section would crash the entire system.
 
