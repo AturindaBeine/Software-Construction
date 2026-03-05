@@ -1,1 +1,17 @@
+**Netflix microservices.**
+Netflix transitioned from a monolithic architecture, a single Java application running on Oracle databases, to microservices architecture after a major database corruption that brought their system down for about three days in 2008. Netflix migrated from their own data centres to Amazon Web Services (AWB) allowing it to use the scalability and reliability of AWS such that when demand grows rapidly, it lets Netflix scale up quickly without worrying about running out of resources. 
+Examples of microservices that Netflix uses include playback service, recommendation service, edge service or Zuul as the API (Application Programming Interface) gateway, Eureka for service discovery, user authentication, and billing and subscription service. With these microservices, separation of concerns is applied with each service having one job and its own dedicated data store preventing a ripple effect where a bug in one section would crash the entire system.
 
+**Other companies that use microservices.**
+**1.  Uber**
+Uber originally struggled to develop and launch new features efficiently, fix bugs and expand globally causing it to move from the monolithic to microservices architecture. This led to the introduction of an API gateway connecting the drivers and passengers. These microservices include billing service, map search service, driver matching service, trip management service, among others. For example, if a change needs to be made in the billing or payments microservice, only that specific microservice is addressed or worked on without affecting the others.
+
+**2.	Amazon**
+Amazon also transitioned from monolith to microservices architecture by analyzing and seeing the units of code that served single purposes and then refactoring them into independent services that were each assigned to a team of developers. This helped with better management and scaling these individual services independently. Examples of these microservices are order processing service, customer reviews service, payments service, product catalog service, among others. This transition helped Amazon build other platforms like Amazon Web Services (AWS) which is greatly used around the world.
+
+**Companies that started using microservices and changed back to monolith.**
+**1.	Segment**
+Segment, a customer data platform, was one of the first major tech companies to talk about how microservices were not the best fit for their business model. It originally built one microservice for each destination where they wanted the data to end up, for example analytics such as Google Analytics, advertising such as Facebook Pixel and Google Ads, and others. Having many microservices made it difficult for them to update their system and the engineers spent more time managing them than building new features. This caused them to move back to the monolith architecture which helped to reduce indirect costs and eliminate network latency. 
+
+**2.	Amazon Prime Video**
+Amazon Prime Video originally used a microservices approach for their video monitoring service to detect issues like audio sync problems while streaming but they realized that although it was very scalable, it was unnecessarily complex and costly for them. This led them to go back to a monolithic approach with which they achieved the same functionality as they did when using microservices. This transition back resulted in a 90% reduction in operational costs and it also simplified their architecture.  
